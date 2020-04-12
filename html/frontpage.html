@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>frontpage</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="../css/1stpage.css">
+ 
+  
+<style>
+/* --------------------------------------Universal css---------------------------------------*/
+/* -----------------------------------------------------------------------------------------*/
+* {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Baloo Da 2', cursive;
+        font-family: 'Baloo Thambi 2', cursive;
+        font-family: 'Roboto', sans-serif;
+      }
+  
+      html {
+        scroll-behavior: smooth;
+      }
+  
+      p {
+        font-size: .9rem;
+        line-height: 1.6;
+        font-weight: 400;
+        color: #606060;
+      }
+  
+      h1 {
+        font-family: 'Open Sans', sans-serif;
+        
+      }
+      h1::after{
+        content: "";
+        display: block;
+        margin: 10px auto 20px;
+        background: #1e9ebe;
+        height: 3px;
+        width: 170px;
+      }
+  
+      h3,
+      h4 {
+        font-family: 'Ubuntu', sans-serif;
+      }
+  
+
+      /* -------------------------------------styling navbar---------------------------------------*/
+      /* ---------------------------------------------------------------------------------------- */
+  
+      .nav-item a {
+        color: #f0eeee !important;
+        font-weight: bold;
+      }
+      .nav-item a:hover{
+          background-color: white;
+          color: #0caed6 !important;
+          border-start-end-radius: 50%;
+      }
+  
+      .icon i {
+        margin: 10px;
+        cursor: pointer !important;
+        background-color: transparent;
+      }
+  
+    i {
+        color: white !important;
+      }
+      .navbar-nav{
+       text-align: center !important;
+
+      }
+  
+      /* -------------------------------Styling Home Page-----------------------------------------*/
+      /* --------------------------------------------------------------------------------------- */
+      .sec1 {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)), url('../images/img1.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        clip-path: polygon(100% 0%, 100% 75%, 50% 90%, 0% 75%, 0% 0%);
+        position: relative;
+        opacity: 0.9;
+      }
+  
+      .sec1::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        opacity: .4;
+        background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+      }
+  
+      .profile-card {
+  
+        background: #FFB300;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        left: 50%;
+  
+        overflow: hidden;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-shadow: 0px 3px 6px rgba(139, 67, 67, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+        -webkit-animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+        animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards, moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards, moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards, materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+      }
+  
+      .profile-card header {
+        width: 179px;
+        height: 280px;
+        padding: 40px 20px 30px 20px;
+        display: inline-block;
+        float: left;
+        border-right: 2px dashed #EEEEEE;
+        background: #FFFFFF;
+        color: #000000;
+        margin-top: 40px;
+        opacity: 0;
+        text-align: center;
+        -webkit-animation: moveIn 1s 3.1s ease forwards;
+        animation: moveIn 1s 3.1s ease forwards;
+      }
+  
+      .profile-card header h1 {
+        color: #FF5722;
+        margin-top: 20px;
+        font-size: 24px;
+      }
+  
+      .profile-card header h2 {
+        margin-top: 15px;
+        font-size: 16px;
+      }
+  
+  
+      .profile-card header a>img {
+        height: 130px;
+        width: 120px;
+        max-width: 100%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-transition: -webkit-box-shadow 0.3s ease;
+        transition: box-shadow 0.3s ease;
+        -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+        box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+      }
+  
+      .profile-card header a:hover>img {
+        -webkit-box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
+      }
+  
+      .profile-bio {
+        margin: -13px;
+      }
+  
+      .profile-bio button {
+        margin-top: -18px;
+  
+      }
+  
+      .profile-bio button i {
+        margin-left: 10px;
+        color: white;
+      }
+  
+      @-webkit-keyframes init {
+        0% {
+          width: 0px;
+          height: 0px;
+        }
+  
+        100% {
+          width: 56px;
+          height: 56px;
+          margin-top: 0px;
+          opacity: 1;
+        }
+      }
+  
+      @keyframes init {
+        0% {
+          width: 0px;
+          height: 0px;
+        }
+  
+        100% {
+          width: 56px;
+          height: 56px;
+          margin-top: 0px;
+          opacity: 1;
+        }
+      }
+  
+      @-webkit-keyframes puff {
+        0% {
+          top: 100%;
+          height: 0px;
+          padding: 0px;
+        }
+  
+        100% {
+          top: 50%;
+          height: 100%;
+          padding: 0px 100%;
+        }
+      }
+  
+      @keyframes puff {
+        0% {
+          top: 100%;
+          height: 0px;
+          padding: 0px;
+        }
+  
+        100% {
+          top: 50%;
+          height: 100%;
+          padding: 0px 100%;
+        }
+      }
+  
+      @-webkit-keyframes borderRadius {
+        0% {
+          -webkit-border-radius: 50%;
+        }
+  
+        100% {
+          -webkit-border-radius: 0px;
+        }
+      }
+  
+      @keyframes borderRadius {
+        0% {
+          -webkit-border-radius: 50%;
+        }
+  
+        100% {
+          border-radius: 0px;
+        }
+      }
+  
+      @-webkit-keyframes moveDown {
+        0% {
+          top: 50%;
+        }
+  
+        50% {
+          top: 40%;
+        }
+  
+        100% {
+          top: 100%;
+        }
+      }
+  
+      @keyframes moveDown {
+        0% {
+          top: 50%;
+        }
+  
+        50% {
+          top: 40%;
+        }
+  
+        100% {
+          top: 100%;
+        }
+      }
+  
+      @-webkit-keyframes moveUp {
+        0% {
+          background: #FFB300;
+          top: 100%;
+        }
+  
+        50% {
+          top: 40%;
+        }
+  
+        100% {
+          top: 50%;
+          background: #E0E0E0;
+        }
+      }
+  
+      @keyframes moveUp {
+        0% {
+          background: #FFB300;
+          top: 100%;
+        }
+  
+        50% {
+          top: 40%;
+        }
+  
+        100% {
+          top: 50%;
+          background: #E0E0E0;
+        }
+      }
+  
+      @-webkit-keyframes materia {
+        0% {
+          background: #E0E0E0;
+        }
+  
+        50% {
+          -webkit-border-radius: 4px;
+        }
+  
+        100% {
+          width: 440px;
+          height: 280px;
+          background: #FFFFFF;
+          -webkit-border-radius: 4px;
+        }
+      }
+  
+      @keyframes materia {
+        0% {
+          background: #E0E0E0;
+        }
+  
+        50% {
+          border-radius: 4px;
+        }
+  
+        100% {
+          width: 440px;
+          height: 280px;
+          background: #FFFFFF;
+          border-radius: 4px;
+        }
+      }
+  
+      @-webkit-keyframes moveIn {
+        0% {
+          margin-top: 50px;
+          opacity: 0;
+        }
+  
+        100% {
+          opacity: 1;
+          margin-top: -20px;
+        }
+      }
+  
+      @keyframes moveIn {
+        0% {
+          margin-top: 50px;
+          opacity: 0;
+        }
+  
+        100% {
+          opacity: 1;
+          margin-top: -20px;
+        }
+      }
+  
+      @-webkit-keyframes scaleIn {
+        0% {
+          -webkit-transform: scale(0);
+        }
+  
+        100% {
+          -webkit-transform: scale(1);
+        }
+      }
+  
+      @keyframes scaleIn {
+        0% {
+          transform: scale(0);
+        }
+  
+        100% {
+          transform: scale(1);
+        }
+      }
+  
+      @-webkit-keyframes ripple {
+        0% {
+          transform: scale3d(0, 0, 0);
+        }
+  
+        50%,
+        100% {
+          -webkit-transform: scale3d(1, 1, 1);
+        }
+  
+        100% {
+          opacity: 0;
+        }
+      }
+  
+      @keyframes ripple {
+        0% {
+          transform: scale3d(0, 0, 0);
+        }
+  
+        50%,
+        100% {
+          transform: scale3d(1, 1, 1);
+        }
+  
+        100% {
+          opacity: 0;
+        }
+      }
+  
+      @media screen and (min-aspect-ratio: 4/3) {
+        body {
+          background-size: cover;
+        }
+  
+        body:before {
+          width: 0px;
+        }
+  
+        @-webkit-keyframes puff {
+          0% {
+            top: 100%;
+            width: 0px;
+            padding-bottom: 0px;
+          }
+  
+          100% {
+            top: 50%;
+            width: 100%;
+            padding-bottom: 100%;
+          }
+        }
+  
+        @keyframes puff {
+          0% {
+            top: 100%;
+            width: 0px;
+            padding-bottom: 0px;
+          }
+  
+          100% {
+            top: 50%;
+            width: 100%;
+            padding-bottom: 100%;
+          }
+        }
+      }
+  
+      @media screen and (min-height: 480px) {
+        .profile-card header {
+          width: auto;
+          height: auto;
+          padding: 30px 20px;
+          display: block;
+          float: none;
+          border-right: none;
+        }
+  
+        .profile-card .profile-bio {
+          width: auto;
+          height: auto;
+          padding: 15px 20px 30px 20px;
+          display: block;
+          float: none;
+        }
+  
+        .profile-social-links {
+          width: 100%;
+          display: block;
+          float: none;
+        }
+  
+        @-webkit-keyframes materia {
+          0% {
+            background: #E0E0E0;
+          }
+  
+  
+          50% {
+            -webkit-border-radius: 4px;
+          }
+  
+          100% {
+            width: 280px;
+            height: 440px;
+            background: #FFFFFF;
+            -webkit-border-radius: 4px;
+          }
+        }
+  
+        @keyframes materia {
+          0% {
+            background: #E0E0E0;
+          }
+  
+          50% {
+            border-radius: 4px;
+          }
+  
+          100% {
+            width: 280px;
+            height: 440px;
+            background: #FFFFFF;
+            border-radius: 4px;
+          }
+        }
+      }
+  
+
+      
+      /* -------------------------------------- Styling skills page--------------------------------*/
+      /* -----------------------------------------------------------------------------------------*/
+      .sec2 {
+        height: 100vh;
+        width: 100%;
+        background-color: #f7f7f9;
+        /* margin-bottom: 50px; */
+      }
+  
+      .headings h1 {
+        padding: 10px;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+      }
+  
+      .headings h3 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+  
+      .item h5 {
+        color: #2e2e2e;
+        font-size: 1.0rem;
+        text-transform: capitalize;
+        font-weight: bold;
+      }
+  
+      .progress {
+        height: .6rem;
+        margin-bottom: 25px;
+        background: #606060;
+      }
+  
+     
+      /* -------------------------------------Styling Experiences page------------------------------*/
+      /* ----------------------------------------------------------------------------------------- */
+  
+      .sec3 {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+      }
+  
+      .sec3::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        opacity: 0.9;
+        background: linear-gradient(330deg, #3998a7 0%, #1e9ebe 55%, #1e5799 0%, #fff 0%);
+      }
+  
+      .headings h3 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+  
+      .card {
+        margin: 5px;
+        box-shadow: 0px 10px 20px 4px #00000016;
+      }
+  
+      span {
+        color: #1e9ebe;
+        font-size: 1.2rem;
+      }
+      .cardfafa{
+        color: black !important;
+
+      }
+
+
+  
+      /* ------------------------------------Styling Projects page---------------------------------*/
+      /* ---------------------------------------------------------------------------------------- */
+      .sec4 {
+        height: 100vh;
+        width: 100%;
+        background-color: #f7f7f9;
+    }
+
+    .cards {
+
+        box-shadow: 0px 10px 20px 4px #00000016;
+        margin-top: 5%;
+      
+    }
+
+    /* .projectcard img {
+        height: 300px;
+        width: 520px;
+    } */
+
+    .card-title{
+      text-align: center;
+      margin: 15px 0px;
+  }
+
+    .bloodinfo,
+    .alumniinfo {
+
+        text-align: center !important;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        bottom: -60px !important;
+    }
+
+    .carousel-indicators li {
+        background-color: black;
+
+    }
+
+  
+      /* ---------------------------------------Styling Contact us page-----------------------------*/
+      /* ----------------------------------------------------------------------------------------- */
+      .sec5 {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+      }
+  
+      .sec5 h1 {
+        padding: 10px;
+        font-size: 2.2rem;
+        text-transform: uppercase;
+      }
+      .sec5 h1::after{
+        content: "";
+        display: block;
+        margin: 10px auto 20px;
+        background: white;
+        height: 3px;
+        width: 170px;
+      }
+  
+      .sec5::after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        opacity: 0.9;
+        background: linear-gradient(155deg, #3998a7 0%, #1e9ebe 55%, #1e5799 0%, #fff 0%);
+      }
+  
+      .contactbutton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+      }
+  
+      .contactbutton button {
+        background-color: white;
+        color: #1e9ebe;
+        border-color: #1e9ebe;
+        margin-top: -15px;
+        border-radius: 15px;
+      }
+  
+      .contactbutton button:hover {
+        background-color: #1e9ebe;
+        color: white;
+        border-color: transparent;
+  
+      }
+  
+      ::placeholder {
+        font-style: italic;
+      }
+  /* ====================================== Media Queries=========================================*/
+  
+      @media(min-width: 769px) {
+
+        .cards{
+          margin-top: 100px;
+          height: 250px !important;
+        }
+        
+
+      }
+
+      @media(max-width: 1200px) {
+        .nav-item {
+          text-align: center !important;
+          /* margin-left: 175px; */
+  
+        }
+  
+        .icon {
+          text-align: center !important;
+  
+        }
+  
+        .sec2, .sec3,.sec4,.sec5{
+          height: auto;
+          margin-top: 50px;
+        }
+        footer{
+          height: auto;
+          margin-top: 50px;
+        }
+  
+      }
+
+
+      #loading{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+  background: #fff
+  url('http://www.pictureshack.us/images/16942_Preloader_10.gif') no-repeat center center;
+	z-index: 99999;
+}
+</style>
+</head>
+
+<body onload="myFunction()">
+<div id="loading"></div>
+   
+
+  <!-- =============================== navbar markup =============================-->
+
+
+  <nav class="navbar navbar-expand-lg bg-info navbar-light" id="navig">
+
+    <a class="navbar-brand font-weight-bold text-uppercase" style="color: white;" href="#">Tauheed Shahid</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+      <ul class="navbar-nav text-uppercase mr-auto ml-auto text-center">
+        <li class="nav-item active">
+          <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#sect2">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sect3">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sect4">projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sect5">Contact</a>
+        </li>
+      </ul>
+
+      <div class="icon">
+        <a target="_blank" href="https://www.facebook.com/tauheed.shahid.1"><i class="fa fa-facebook-square"></i></a>
+        <a target="_blank" href="https://www.instagram.com/thacker__shahid/"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/thacker-shahid-529361191/"><i
+            class="fa fa-linkedin"></i></a>
+        <a target="_blank" href="https://github.com/thacker-shahid"><i class="fa fa-github"></i></a>
+      </div>
+
+    </div>
+  </nav>
+
+
+
+
+  <!-- ============================= Home/About markup ============================-->
+
+
+
+
+
+  <section class="sec1" id="sect1">
+
+    <div class="profile-card">
+      <header>
+        <a target="_blank" href="#">
+          <img src="../images/mypic.jpeg" class="hoverZoomLink">
+        </a>
+        <h1>
+          Tauheed Shahid
+        </h1>
+        <h2>
+          Front end Developer
+        </h2>
+        <div class="profile-bio">
+          <p>I am a 2nd year undergraduate from ABES Engineeriang College Ghaziabad. I love creating amazing
+            front end
+            using HTML5,CSS3,javascript and bootstrap4.</p>
+          <a target="__blank" href="https://drive.google.com/file/d/1hagWhBReQ47UkF-ahMiitm4-EIs3wCkV/view?usp=sharing">
+            <button type="button" class="btn btn-info">Download Resume<i class="fa fa-download"></i></button>
+          </a>
+        </div>
+      </header>
+    </div>
+
+  </section>
+
+
+
+  <!-- ============================== Skills  markup ==================================-->
+
+
+
+  <section class="sec2" id="sect2">
+    <div class="container headings text-center">
+      <h1 class="font-weight-bold my-2">Skills</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="container col-lg-6 col-10 offset-1 offset-lg-0">
+          <div class="container headings text-centre">
+            <h3 class="text-center font-weight-bold my-5">Technical Skills</h3>
+          </div>
+
+
+          <div class="item my-3">
+            <h5>HTML</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 90%"><strong>90%</strong></div>
+            </div>
+          </div>
+
+
+          <div class="item my-3">
+            <h5>bootstrap4</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 75%"><strong>75%</strong></div>
+            </div>
+          </div>
+
+
+          <div class="item my-3">
+            <h5>CSS3</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 70%"><strong>70%</strong></div>
+            </div>
+          </div>
+
+
+          <div class="item my-3">
+            <h5>javascript</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 60%"><strong>60%</strong></div>
+            </div>
+          </div>
+
+          <div class="item my-3">
+            <h5>Datastructure and algorithm</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 50%"><strong>50%</strong></div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="container col-lg-6 col-10 offset-1 offset-lg-0">
+          <div class="container headings text-centre">
+            <h3 class="text-center font-weight-bold my-5">Professional Skills</h3>
+          </div>
+
+
+          <div class="item my-3">
+            <h5>Communication</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 90%"><strong>90%</strong></div>
+            </div>
+          </div>
+
+
+          <div class="item my-3">
+            <h5>Team Work</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 70%"><strong>70%</strong></div>
+            </div>
+          </div>
+
+
+          <div class="item my-3">
+            <h5>Project Management</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 650%"><strong>65%</strong></div>
+            </div>
+          </div>
+
+
+          <div class="item my-3">
+            <h5>Creativity</h5>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 50%"><strong>50%</strong></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ============================== Experiance markup ===============================-->
+
+
+
+  <section class="sec3" id="sect3">
+
+    <h1 class="container headings text-center font-weight-bold my-3">Experience</h1>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="container col">
+
+          <h3 class=" container headings text-center font-weight-bold my-5">Education</h3>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">B.tech :<span> ABES Engineeriang College (2018-2022)</span></h4>
+              <p class="card-text">Work on progress</p>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">12th :<span> St. Peter Inter College (2015-2016)</span></h4>
+              <p class="card-text">Passed 12th with 80.01%(I.S.C)</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">10th :<span> St. Peter Inter College (2013-2014)</span></h4>
+              <p class="card-text">76% in 10th Board (I.C.S.E )..</p>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="container col">
+
+          <h3 class="container headings  text-center font-weight-bold my-5">Work Experience</h3>
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Front end Developer @<span> Calsys pvt. Ltd.</span></h4>
+              <p class="card-text">Responsibility :</p>
+              <i class="fa fa-circle cardfafa"> Validate CSS</i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ============================= Project markup ===============================-->
+
+
+
+  <section class="sec4" id="sect4">
+    <div class="container headings text-center">
+      <h1 class="font-weight-bold my-2">Projects</h1>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="card cards">
+              <div class="row ">
+                <div class="col-md-4">
+                  <img src="../images/project2.png" class="w-100">
+                </div>
+                <div class="col-md-8 px-3 alumniinfo">
+                  <h4 class="card-title">Alumni Tracking System</h4>
+                  <p class="card-text">This project is aimed at developing a Repository and each Engine for alumni of
+                    the college,which is of importance to a college.The Alumni Information Database is a web based
+                    application that can be accessed throughout the World. Anyone can access the search Engine to know
+                    about any Alumni of that college but can’t able to add.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="container">
+            <div class="card cards">
+              <div class="row ">
+                <div class="col-md-4">
+                  <img src="../images/project1.png" class="w-100">
+                </div>
+                <div class="col-md-8 px-3 bloodinfo">
+
+                  <h4 class="card-title">Blood Donation Manage ent System</h4>
+                  <p class="card-text">The Main aim of Blood Bank Management Mini DBMS project is to ease the process of
+                    blood donation and allowance at blood bank.Doctor can add blood donor details with blood group,
+                    quantity, age etc.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+
+
+  <!-- ============================== Contact markup =====================================-->
+
+
+
+  <section class="sec5" id="sect5">
+    <div class="container headings text-center">
+      <h1 class="font-weight-bold my-5">Contact</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-1 my-5">
+
+          <form action="#" class="contactform">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Enter your name" id="username">
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Enter your E-mail" id="email">
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control" placeholder="Enter your number" id="mobile">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="4" id="comment"></textarea>
+            </div>
+            <div class="form-group form-check">
+              <input class="form-check-input" type="checkbox"> Remember me
+            </div>
+            <div class="contactbutton">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ================================ Footer markup =============================-->
+
+
+
+
+  <footer class="page-footer font-small mdb-color darken-3 pt-4 bg-info">
+    <div class="container">
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright: All rights reserved.
+        <div class="icon">
+          <a target="_blank" href="https://www.facebook.com/tauheed.shahid.1"><i
+              class="fa fa-1.8x fa-facebook-square"></i></a>
+          <a target="_blank" href="https://www.instagram.com/thacker__shahid/"><i
+              class="fa fa-1.8x fa-instagram"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/thacker-shahid-529361191/"><i
+              class="fa fa-1.8x fa-linkedin"></i></a>
+          <a target="_blank" href="https://github.com/thacker-shahid"><i class="fa fa-1.8x  fa-github"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+  <script>
+      
+      var preloader = document.getElementById("loading");
+    
+  
+      function myFunction(){
+        preloader.style.display = 'none';
+      };
+    </script>
+
+</body>
+
+</html>
