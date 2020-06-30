@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>frontpage</title>
+  <title>Tauheed Shahid</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -760,6 +760,36 @@
       ::placeholder {
         font-style: italic;
       }
+    
+    
+    /* ------------------------------- To Up Arrow ---------------------------------------- */
+      /* ----------------------------------------------------------------------------------- */
+      .to-top{
+        /* z-index: 9999999999999; */
+        background: #1e9ebe;;
+        position: fixed;
+        bottom: 16px;
+        right: 32px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 32px;
+        text-decoration: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .4s;
+        /* border: 1px solid black; */
+      }
+      .to-top.active{
+        bottom: 32px;
+        pointer-events: auto;
+        opacity: 1;
+      }
+    
+    
   /* ====================================== Media Queries=========================================*/
   
       @media(min-width: 769px) {
@@ -841,7 +871,7 @@
       <div class="icon">
         <a target="_blank" href="https://www.facebook.com/tauheed.shahid.1"><i class="fa fa-facebook-square"></i></a>
         <a target="_blank" href="https://www.instagram.com/thacker__shahid/"><i class="fa fa-instagram"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/thacker-shahid-529361191/"><i
+        <a target="_blank" href="https://www.linkedin.com/in/thacker-shahid"><i
             class="fa fa-linkedin"></i></a>
         <a target="_blank" href="https://github.com/thacker-shahid"><i class="fa fa-github"></i></a>
       </div>
@@ -872,9 +902,9 @@
           Front end Developer
         </h2>
         <div class="profile-bio">
-          <p>I am a 2nd year undergraduate from ABES Engineeriang College Ghaziabad. I love creating amazing
-            front end
-            using HTML5,CSS3,javascript and bootstrap4.</p>
+          <p>I am a 3rd year undergraduate from ABES Engineeriang College Ghaziabad. I love creating amazing
+            websites
+            using HTML5,CSS3,JavaScript,Bootstrap4,and Node js.</p>
           <a target="__blank" href="https://drive.google.com/file/d/1hagWhBReQ47UkF-ahMiitm4-EIs3wCkV/view?usp=sharing">
             <button type="button" class="btn btn-info">Download Resume<i class="fa fa-download"></i></button>
           </a>
@@ -1162,6 +1192,10 @@
   </section>
 
 
+  <a href="#" class="to-top">
+    <i class="fa fa-chevron-up"></i>
+  </a>
+
 
 
   <!-- ================================ Footer markup =============================-->
@@ -1178,7 +1212,7 @@
               class="fa fa-1.8x fa-facebook-square"></i></a>
           <a target="_blank" href="https://www.instagram.com/thacker__shahid/"><i
               class="fa fa-1.8x fa-instagram"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/thacker-shahid-529361191/"><i
+          <a target="_blank" href="https://www.linkedin.com/in/thacker-shahid"><i
               class="fa fa-1.8x fa-linkedin"></i></a>
           <a target="_blank" href="https://github.com/thacker-shahid"><i class="fa fa-1.8x  fa-github"></i></a>
         </div>
@@ -1200,6 +1234,18 @@
       let value = document.querySelector('.loader_bg');
       value.style.display = 'none';
     }
+     let toTop = document.querySelector('.to-top');
+    console.log('done 1');
+    window.addEventListener("scroll", ()=>{
+      console.log('done 2');
+      if(window.pageYOffset > 100){
+        console.log('done 3');
+        toTop.classList.add("active");
+      }else{
+        console.log('done 4');
+        toTop.classList.remove("active");
+      }
+    });
     </script>
 
 </body>
