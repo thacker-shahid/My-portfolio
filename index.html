@@ -663,43 +663,21 @@
       /* ------------------------------------Styling Projects page---------------------------------*/
       /* ---------------------------------------------------------------------------------------- */
       .sec4 {
-        height: 100vh;
+        height: 165vh;
         width: 100%;
         background-color: #f7f7f9;
     }
 
     .cards {
-
         box-shadow: 0px 10px 20px 4px #00000016;
         margin-top: 5%;
-      
     }
 
-    /* .projectcard img {
-        height: 300px;
-        width: 520px;
-    } */
 
     .card-title{
       text-align: center;
       margin: 15px 0px;
   }
-
-    .bloodinfo,
-    .alumniinfo {
-
-        text-align: center !important;
-    }
-
-    .carousel-indicators {
-        position: absolute;
-        bottom: -60px !important;
-    }
-
-    .carousel-indicators li {
-        background-color: black;
-
-    }
 
   
       /* ---------------------------------------Styling Contact us page-----------------------------*/
@@ -1127,67 +1105,256 @@
 
 
   <section class="sec4" id="sect4">
+
     <div class="container headings text-center">
       <h1 class="font-weight-bold my-2">Projects</h1>
     </div>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      </ol>
-      <div class="carousel-inner">
+    <div class="container" >
 
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="card cards">
-              <div class="row ">
-                <div class="col-md-4">
-                  <img src="project2.png" class="w-100">
+      <div class="row">
+
+        <!--------------- Codechef card -------------->
+
+        <div class="col-lg-6 col-md-6 col-sm-12 container text-center">
+
+          <div class="card mx-auto mt-2" style="width: 18rem;">
+            <img class="card-img-top" src="../CodechefFinder.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Codechef User Finder</h5>
+              <a type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModal">
+                Read more...
+              </a>
+            </div>
+          </div>
+
+          <!--------------- Codechef Modal -------------->
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-center" id="exampleModalLabel">Codechef Finder App</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
                 </div>
-                <div class="col-md-8 px-3 alumniinfo">
-                  <h4 class="card-title">Alumni Tracking System</h4>
-                  <p class="card-text">This project is aimed at developing a Repository and each Engine for alumni of
-                    the college,which is of importance to a college.The Alumni Information Database is a web based
-                    application that can be accessed throughout the World. Anyone can access the search Engine to know
-                    about any Alumni of that college but can’t able to add.</p>
-                  
+                <div class="modal-body">
+                  This is a simple Codechef User Finder App used to fetch the user details (two at a time) and compare the
+                  progress from one another.
+                </div>
+                <div class="modal-footer">
+                  <a href="https://thacker-shahid.github.io/Codechef_Finder/"
+                    class="btn btn-primary">Demo</a>&nbsp;&nbsp;&nbsp;
+                  <a href="https://github.com/thacker-shahid/Codechef_Finder" class="btn btn-primary">Source Code</a>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
           </div>
+
+
+          <!--------------- Github Finder Card -------------->
+
+
+          <div class="card mx-auto mt-2" style="width: 18rem;">
+            <img class="card-img-top" src="../GithubFinder.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Github User Finder</h5>
+              <a type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#githubfinder">
+                Read more...
+              </a>
+            </div>
+          </div>
+
+          <!--------------- Github Finder Modal -------------->
+
+          <div class="modal fade" id="githubfinder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-center" id="exampleModalLabel">Github Finder App</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  This is a simple Github User Finder app used to fetch github users. You can see user's number of public
+                  repositories,followers,following etc.
+                </div>
+                <div class="modal-footer">
+                  <a href="https://thacker-shahid.github.io/Github-User-Finder/"
+                class="btn btn-primary">Demo</a>&nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/thacker-shahid/Github-User-Finder" class="btn btn-primary">Source Code</a>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!--------------- Notes App Card -------------->
+
+          <div class="card mx-auto mt-2" style="width: 18rem;">
+            <img class="card-img-top" src="../NotesApp.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Notes</h5>
+              <a type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#notesapp">
+                Read more...
+              </a>
+            </div>
+          </div>
+
+          <!--------------- Notes App Modal -------------->
+
+          <div class="modal fade" id="notesapp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-center" id="exampleModalLabel">Notes App</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  This is a simple Notes taking app.It adds Notes, removes one-by-one or removes all notes at a time. User can
+                  also search thier notes by typing keywords into the search box.
+                </div>
+                <div class="modal-footer">
+                  <a href="https://thacker-shahid.github.io/NotesApp/" class="btn btn-primary">Demo</a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/thacker-shahid/NotesApp" class="btn btn-primary">Source Code</a>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="carousel-item">
-          <div class="container">
-            <div class="card cards">
-              <div class="row ">
-                <div class="col-md-4">
-                  <img src="project1.png" class="w-100">
-                </div>
-                <div class="col-md-8 px-3 bloodinfo">
+        <div class="col-lg-6 col-md-6 col-sm-12 container text-center">
 
-                  <h4 class="card-title">Blood Donation Manage ent System</h4>
-                  <p class="card-text">The Main aim of Blood Bank Management Mini DBMS project is to ease the process of
-                    blood donation and allowance at blood bank.Doctor can add blood donor details with blood group,
-                    quantity, age etc.</p>
+          <!--------------- News App Card -------------->
+
+          <div class="card mx-auto mt-2" style="width: 18rem;">
+            <img class="card-img-top" src="../NewsApp.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">News App</h5>
+              <a type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#newsapp">
+                Read more...
+              </a>
+            </div>
+          </div>
+
+          <!--------------- News App Modal -------------->
+
+          <div class="modal fade" id="newsapp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-center" id="exampleModalLabel">News App</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  This is a simple daily news fetching App which fetches updated and fresh news from various indian
+                  news channels.
+                </div>
+                <div class="modal-footer">
+                  <a href="https://thacker-shahid.github.io/News_App/" class="btn btn-primary">Demo</a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/thacker-shahid/News_App" class="btn btn-primary">Source Code</a>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
               </div>
             </div>
-
           </div>
+
+          <!--------------- Miracle Star Card -------------->
+
+          <div class="card mx-auto mt-2" style="width: 18rem;">
+            <img class="card-img-top" src="../MiracleStar.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Event website</h5>
+              <a type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#miraclestar">
+                Read more...
+              </a>
+            </div>
+          </div>
+          <!--------------- Miracle Star Modal -------------->
+
+          <div class="modal fade" id="miraclestar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-center" id="exampleModalLabel">Miracle-Star</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  This is a Music and Entertainment website which have features like Register user, signIn user, Book
+                  thier tickets etc.
+                </div>
+                <div class="modal-footer">
+                  <a href="https://thacker-shahid.github.io/Miracle-Star/" class="btn btn-primary">Demo</a>
+              &nbsp;&nbsp;&nbsp;
+              <a href="https://github.com/thacker-shahid/Miracle-Star" class="btn btn-primary">Source Code</a>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--------------- Calculator Card -------------->
+
+          <div class="card mx-auto mt-2" style="width: 18rem;">
+            <img class="card-img-top" src="../Calculator.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Calculator</h5>
+              <a type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#calculator">
+                Read more...
+              </a>
+            </div>
+          </div>
+
+          <!--------------- Calculator Modal -------------->
+
+          <div class="modal fade" id="calculator" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-center" id="exampleModalLabel">Calculator</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  This is a simple Calculator used to calculate your hisaab in day-to-day life.
+                </div>
+                <div class="modal-footer">
+                  <a href="https://thacker-shahid.github.io/MyCalculator/" class="btn btn-primary">Demo</a>
+                  &nbsp;&nbsp;&nbsp;
+                  <a href="https://github.com/thacker-shahid/MyCalculator" class="btn btn-primary">Source Code</a>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
+
   </section>
+
 
 
 
